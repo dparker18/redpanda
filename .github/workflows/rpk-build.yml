@@ -59,6 +59,7 @@ jobs:
       working-directory: src/go/rpk/
       run: |
         zip -j rpk-${{ matrix.os }}-${{ matrix.arch }}.zip ./${{ matrix.os }}-${{ matrix.arch }}/rpk
+        
 
     - name: Upload build artifacts
       uses: actions/upload-artifact@v2
